@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <UserSecretsId>dotnet-Hangfire.Server-F96241DA-2180-4195-8715-1A252027E4E9</UserSecretsId>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Hangfire" Version="1.8.0" />
+        <PackageReference Include="Hangfire.SqlServer" Version="1.8.0" />
+        <PackageReference Include="Microsoft.Extensions.Hosting" Version="7.0.1" />
+        <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Hangfire.Producer\Hangfire.Producer.csproj" />
+      <ProjectReference Include="..\Hangfire.Shared\Hangfire.Shared.csproj" />
+    </ItemGroup>
+</Project>

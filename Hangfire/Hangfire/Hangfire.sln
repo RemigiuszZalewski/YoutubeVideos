@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hangfire.Producer", "Hangfire.Producer\Hangfire.Producer.csproj", "{8AFC1698-89F4-4DC6-BBF4-28CEAB8E201C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hangfire.Server", "Hangfire.Server\Hangfire.Server.csproj", "{39DB80D9-1A4D-48DB-A03B-CC77CA4B51EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hangfire.Shared", "Hangfire.Shared\Hangfire.Shared.csproj", "{13C90C39-E8AB-4F5C-9A0E-EC306B3F950F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8AFC1698-89F4-4DC6-BBF4-28CEAB8E201C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AFC1698-89F4-4DC6-BBF4-28CEAB8E201C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AFC1698-89F4-4DC6-BBF4-28CEAB8E201C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AFC1698-89F4-4DC6-BBF4-28CEAB8E201C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39DB80D9-1A4D-48DB-A03B-CC77CA4B51EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39DB80D9-1A4D-48DB-A03B-CC77CA4B51EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39DB80D9-1A4D-48DB-A03B-CC77CA4B51EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39DB80D9-1A4D-48DB-A03B-CC77CA4B51EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13C90C39-E8AB-4F5C-9A0E-EC306B3F950F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13C90C39-E8AB-4F5C-9A0E-EC306B3F950F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13C90C39-E8AB-4F5C-9A0E-EC306B3F950F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13C90C39-E8AB-4F5C-9A0E-EC306B3F950F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

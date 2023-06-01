@@ -1,0 +1,12 @@
+C:\Users\reza\Projects\Hangfire\Hangfire.Shared\bin\Debug\net7.0\Hangfire.Shared.deps.json
+C:\Users\reza\Projects\Hangfire\Hangfire.Shared\bin\Debug\net7.0\Hangfire.Shared.dll
+C:\Users\reza\Projects\Hangfire\Hangfire.Shared\bin\Debug\net7.0\Hangfire.Shared.pdb
+C:\Users\reza\Projects\Hangfire\Hangfire.Shared\obj\Debug\net7.0\Hangfire.Shared.csproj.AssemblyReference.cache
+C:\Users\reza\Projects\Hangfire\Hangfire.Shared\obj\Debug\net7.0\Hangfire.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\reza\Projects\Hangfire\Hangfire.Shared\obj\Debug\net7.0\Hangfire.Shared.AssemblyInfoInputs.cache
+C:\Users\reza\Projects\Hangfire\Hangfire.Shared\obj\Debug\net7.0\Hangfire.Shared.AssemblyInfo.cs
+C:\Users\reza\Projects\Hangfire\Hangfire.Shared\obj\Debug\net7.0\Hangfire.Shared.csproj.CoreCompileInputs.cache
+C:\Users\reza\Projects\Hangfire\Hangfire.Shared\obj\Debug\net7.0\Hangfire.Shared.dll
+C:\Users\reza\Projects\Hangfire\Hangfire.Shared\obj\Debug\net7.0\refint\Hangfire.Shared.dll
+C:\Users\reza\Projects\Hangfire\Hangfire.Shared\obj\Debug\net7.0\Hangfire.Shared.pdb
+C:\Users\reza\Projects\Hangfire\Hangfire.Shared\obj\Debug\net7.0\ref\Hangfire.Shared.dll
