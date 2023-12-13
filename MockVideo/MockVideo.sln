@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MockVideo.Application", "MockVideo.Application\MockVideo.Application.csproj", "{B2A01860-FAA7-48D3-B6F6-13F158639301}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MockVideo.Domain", "MockVideo.Domain\MockVideo.Domain.csproj", "{48C1DBE3-B31D-4053-92D6-42C1671398FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MockVideo.Application.Tests", "MockVideo.Application.Tests\MockVideo.Application.Tests.csproj", "{4202BDFD-2121-4C60-89B4-2BFC42317467}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B2A01860-FAA7-48D3-B6F6-13F158639301}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2A01860-FAA7-48D3-B6F6-13F158639301}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2A01860-FAA7-48D3-B6F6-13F158639301}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2A01860-FAA7-48D3-B6F6-13F158639301}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48C1DBE3-B31D-4053-92D6-42C1671398FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48C1DBE3-B31D-4053-92D6-42C1671398FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48C1DBE3-B31D-4053-92D6-42C1671398FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48C1DBE3-B31D-4053-92D6-42C1671398FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4202BDFD-2121-4C60-89B4-2BFC42317467}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4202BDFD-2121-4C60-89B4-2BFC42317467}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4202BDFD-2121-4C60-89B4-2BFC42317467}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4202BDFD-2121-4C60-89B4-2BFC42317467}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
