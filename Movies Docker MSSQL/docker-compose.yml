@@ -1,0 +1,51 @@
+﻿services:
+  movies.api:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_HTTP_PORTS=3000
+      - ASPNETCORE_HTTPS_PORTS=3001
+      - ASPNETCORE_Kestrel__Certificates__Default__Password=123
+      - ASPNETCORE_Kestrel__Certificates__Default__Path=/https/movies.pfx
+    container_name: movies.api
+    image: movies.api
+    build:
+      context: .
+      dockerfile: Movies.Presentation/Dockerfile
+    ports:
+      - "3000:3000"
+      - "3001:3001"
+    volumes:
+      - ~/.aspnet/https:/https:ro
+    depends_on:
+      database.server:
+        condition: service_healthy
+  
+  database.server:
+    image: "mcr.microsoft.com/mssql/server"
+    container_name: database.server
+    ports:
+      - "1433:1433"
+    environment:
+      - ACCEPT_EULA=y
+      - SA_PASSWORD=SuperPassword123
+    volumes:
+      - ./sqlserver/data:/var/opt/mssql/data
+      - ./sqlserver/log:/var/opt/mssql/log
+        
+    healthcheck:
+      test: /opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P "SuperPassword123" -Q "SELECT 1" -b -o /dev/null
+      interval: 10s
+      timeout: 3s
+      retries: 10
+      start_period: 10s
+      
+  movies.client:
+    build:
+      context: Movies.Presentation/Client/movies
+      dockerfile: Dockerfile
+    image: movies.client
+    container_name: movies.client
+    ports:
+      - "5000:5000"
+    depends_on: 
+      - movies.api
