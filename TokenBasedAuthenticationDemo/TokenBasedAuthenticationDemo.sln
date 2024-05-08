@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TokenBasedAuthenticationDemo.Api", "TokenBasedAuthenticationDemo.Api\TokenBasedAuthenticationDemo.Api.csproj", "{B0744B29-D585-4BF9-84EB-E2EE28C31AA0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TokenBasedAuthenticationDemo.Domain", "TokenBasedAuthenticationDemo.Domain\TokenBasedAuthenticationDemo.Domain.csproj", "{335B0E4F-163C-4CAF-9A39-8DDCBF1CFB3C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TokenBasedAuthenticationDemo.Infrastructure", "TokenBasedAuthenticationDemo.Infrastructure\TokenBasedAuthenticationDemo.Infrastructure.csproj", "{BAD2131A-D5AB-4172-939B-3B061BAF3082}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B0744B29-D585-4BF9-84EB-E2EE28C31AA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0744B29-D585-4BF9-84EB-E2EE28C31AA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0744B29-D585-4BF9-84EB-E2EE28C31AA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0744B29-D585-4BF9-84EB-E2EE28C31AA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{335B0E4F-163C-4CAF-9A39-8DDCBF1CFB3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{335B0E4F-163C-4CAF-9A39-8DDCBF1CFB3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{335B0E4F-163C-4CAF-9A39-8DDCBF1CFB3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{335B0E4F-163C-4CAF-9A39-8DDCBF1CFB3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAD2131A-D5AB-4172-939B-3B061BAF3082}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAD2131A-D5AB-4172-939B-3B061BAF3082}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAD2131A-D5AB-4172-939B-3B061BAF3082}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAD2131A-D5AB-4172-939B-3B061BAF3082}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

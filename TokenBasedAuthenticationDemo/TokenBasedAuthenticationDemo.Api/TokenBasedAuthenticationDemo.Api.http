@@ -1,0 +1,6 @@
+@TokenBasedAuthenticationDemo.Api_HostAddress = http://localhost:5200
+
+GET {{TokenBasedAuthenticationDemo.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
