@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoredProcedures.API", "StoredProcedures.API\StoredProcedures.API.csproj", "{DBD94D59-D8D5-4220-9C57-D42B1F075861}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoredProcedures.Infrastructure", "StoredProcedures.Infrastructure\StoredProcedures.Infrastructure.csproj", "{BE15AD25-456A-49F0-BC11-40D598910932}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoredProcedures.Domain", "StoredProcedures.Domain\StoredProcedures.Domain.csproj", "{6D048371-FF87-44FC-AAB4-FD7AAA4687C8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DBD94D59-D8D5-4220-9C57-D42B1F075861}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBD94D59-D8D5-4220-9C57-D42B1F075861}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBD94D59-D8D5-4220-9C57-D42B1F075861}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBD94D59-D8D5-4220-9C57-D42B1F075861}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE15AD25-456A-49F0-BC11-40D598910932}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE15AD25-456A-49F0-BC11-40D598910932}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE15AD25-456A-49F0-BC11-40D598910932}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE15AD25-456A-49F0-BC11-40D598910932}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D048371-FF87-44FC-AAB4-FD7AAA4687C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D048371-FF87-44FC-AAB4-FD7AAA4687C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D048371-FF87-44FC-AAB4-FD7AAA4687C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D048371-FF87-44FC-AAB4-FD7AAA4687C8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
