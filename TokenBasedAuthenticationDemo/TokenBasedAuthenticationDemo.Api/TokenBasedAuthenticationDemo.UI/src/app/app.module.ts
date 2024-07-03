@@ -7,7 +7,7 @@ import {HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { LoginComponent } from './components/login/login.component';
 import { ProductListComponent } from './components/product-list/product-list.component';
-import {JwtInterceptor} from "./interceptors/jwt-interceptor";
+import {AccessTokenInterceptor} from "./interceptors/access-token-interceptor";
 import {ErrorInterceptor} from "./interceptors/error-interceptor";
 
 @NgModule({
@@ -24,7 +24,7 @@ import {ErrorInterceptor} from "./interceptors/error-interceptor";
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true },
-    { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true }
+    { provide: HTTP_INTERCEPTORS, useClass: AccessTokenInterceptor, multi: true }
   ],
   bootstrap: [AppComponent]
 })

@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import {LoginRequest} from "../models/login-request";
 import {LoginResponse} from "../models/login-response";
-import { Observable, map } from 'rxjs';
+import {Observable, map, of, catchError} from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -12,7 +12,7 @@ export class AuthService {
   constructor(private httpClient: HttpClient) { }
 
   login(credentials: LoginRequest) : Observable<LoginResponse> {
-    return this.httpClient.post<LoginResponse>("http://localhost:5200/login", credentials)
+    return this.httpClient.post<LoginResponse>("https://localhost:44326/login", credentials)
       .pipe(map(response => {
         localStorage.setItem('accessToken', response.accessToken);
         document.cookie = `refreshToken=${response.refreshToken};`;
@@ -23,7 +23,7 @@ export class AuthService {
   refreshToken() : Observable<LoginResponse> {
     const refreshToken = this.getRefreshTokenFromCookie();
 
-    return this.httpClient.post<LoginResponse>("http://localhost:5200/refresh", { refreshToken})
+    return this.httpClient.post<LoginResponse>("https://localhost:44326/refresh", { refreshToken})
       .pipe(map(response => {
         localStorage.setItem('accessToken', response.accessToken);
         document.cookie = `refreshToken=${response.refreshToken};`;
@@ -50,7 +50,14 @@ export class AuthService {
     localStorage.removeItem('accessToken');
   }
 
-  isLoggedIn() : boolean {
-    return localStorage.getItem('accessToken') !== null;
+  isLoggedIn() : Observable<boolean> {
+    if (localStorage.getItem('accessToken') === null)
+      return of(false);
+
+    return this.httpClient.get("https://localhost:44326/validate-access-token")
+      .pipe(
+        map(() => true),
+        catchError(() => of(false))
+      );
   }
 }

@@ -12,10 +12,11 @@ export class ErrorInterceptor implements HttpInterceptor {
     return next.handle(request).pipe(
       catchError(error => {
         if (error instanceof HttpErrorResponse && error.status === 401) {
-          if (!request.url.includes('/login')){
+          if (!request.url.includes('/login') && !request.url.includes('/refresh')) {
             return this.handle401Error(request, next);
           }
           else {
+            this.authService.logout();
             return throwError(() => error);
           }
         }
@@ -44,13 +45,9 @@ export class ErrorInterceptor implements HttpInterceptor {
   ) : Observable<HttpEvent<any>> {
     return this.authService.refreshToken().pipe(
       switchMap(() => {
+        console.log('Token refreshed successfully')
         return next.handle(this.addToken(request))
-      }),
-      catchError((error) => {
-        console.error("Failed to refresh token:", error);
-        this.authService.logout(); // Log out user or handle error as needed
-        return throwError(() => error);
-    })
+      })
     )
   }
 }

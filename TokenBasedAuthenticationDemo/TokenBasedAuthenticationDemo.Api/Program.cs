@@ -117,4 +117,7 @@ app.MapGet("/get-products", () => new List<Product>
     }
 }).RequireAuthorization();
 
+app.MapGet("/validate-access-token",
+    () => Results.Ok(true)).RequireAuthorization();
+
 app.Run();
