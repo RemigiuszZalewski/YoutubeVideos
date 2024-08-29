@@ -3,8 +3,14 @@ using Movies.Application;
 using Movies.Infrastructure;
 using Movies.Presentation.Handlers;
 using Movies.Presentation.Modules;
+using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Host.UseSerilog((ctx, conf) =>
+{
+    conf.ReadFrom.Configuration(ctx.Configuration);
+});
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
