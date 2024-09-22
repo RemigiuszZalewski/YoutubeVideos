@@ -1,0 +1,6 @@
+@ShoppingListSignalR.API_HostAddress = http://localhost:5291
+
+GET {{ShoppingListSignalR.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

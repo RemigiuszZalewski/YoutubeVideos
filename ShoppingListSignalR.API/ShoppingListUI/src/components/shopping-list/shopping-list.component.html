@@ -1,0 +1,30 @@
+<div class="container">
+  <h2 class="text-center mb-4">Shopping List</h2>
+
+  <div *ngIf="!shoppingListId" class="mb-4">
+    <div class="input-group mb-3">
+      <button class="btn btn-primary" (click)="createShoppingList()">Create New Shopping List</button>
+    </div>
+
+    <div class="input-group mb-3">
+      <input type="text" class="form-control" id="shoppingListIdInput" [(ngModel)]="shoppingListIdInput" placeholder="Enter shopping list ID">
+      <button class="btn btn-primary" (click)="joinShoppingList()">Join Shopping List</button>
+    </div>
+  </div>
+
+  <div *ngIf="shoppingListId">
+    <p id="shoppingListIdDisplay" class="text-info">Your shopping list ID: <strong>{{ shoppingListId }}</strong></p>
+
+    <div class="input-group mb-3">
+      <input type="text" class="form-control" [(ngModel)]="newShoppingListItem" placeholder="Enter item to add">
+      <button class="btn btn-primary" [disabled]="!newShoppingListItem" (click)="addItemToShoppingList()">Add Item</button>
+    </div>
+
+    <ul class="list-group">
+      <li *ngFor="let item of shoppingList" class="list-group-item d-flex justify-content-between align-items-center">
+        {{ item }}
+        <button class="btn btn-danger btn-sm" (click)="removeItemFromShoppingList(item)">Remove</button>
+      </li>
+    </ul>
+  </div>
+</div>
